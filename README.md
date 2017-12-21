@@ -8,5 +8,5 @@ cd aws-lambda-java-hello
 mvn package
 ```
 
-## Now upload the .jar file to AWS Lambda and you are ready
+## Now upload target/aws-lambda-java-hello-1.0-SNAPSHOT.jar to AWS Lambda and you are ready
 
