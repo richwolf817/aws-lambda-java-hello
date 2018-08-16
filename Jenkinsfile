@@ -1,5 +1,7 @@
 pipeline {
-agent any
+    docker {
+      image 'goforgold/build-container:latest'
+    }
     
     stages {
         stage('Build') {
