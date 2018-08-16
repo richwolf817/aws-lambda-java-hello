@@ -5,7 +5,7 @@ resource "aws_iam_role" "example_api_role" {
 
 data "archive_file" "lambda" {
   type = "zip"
-  source_dir = "./cs/published"
+  source_dir = "/var/lib/jenkins/workspace/awe-lambda-java-hello/target/aws-lambda-java-hello-1.0-SNAPSHOT.jar"
   output_path = "lambda.zip"
 }
 

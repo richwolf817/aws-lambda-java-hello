@@ -14,7 +14,8 @@ agent any
         }
         stage('Deliver') {
             steps {
-                sh 'aws lambda update-function-code --function-name ZipTest --zip-file fileb:///var/lib/jenkins/workspace/awe-lambda-java-hello/target/aws-lambda-java-hello-1.0-SNAPSHOT.jar'
+                sh 'terraform init'
+                sh 'terraform apply'
             }
         }
     }
