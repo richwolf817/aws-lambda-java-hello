@@ -21,24 +21,6 @@
     </dependency>
   </dependencies>
 
-<distributionManagement>
-    <snapshotRepository>
-        <id>my-repo-bucket-snapshot</id>
-        <url>http://jartifacts.s3.amazonaws.com/snapshot</url>
-    </snapshotRepository>
-    <repository>
-        <id>my-repo-bucket-release</id>
-        <url>http://jartifacts.s3.amazonaws.com/release</url>
-    </repository>
-</distributionManagement>
-
   <build>
-    <extensions>
-        <extension>
-            <groupId>com.gkatzioura.maven.cloud</groupId>
-            <artifactId>s3-storage-wagon</artifactId>
-            <version>1.0</version>
-        </extension>
-    </extensions>
   </build>
 </project>
