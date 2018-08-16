@@ -1,8 +1,9 @@
 pipeline {
   agent {
-    docker {
-      image 'goforgold/build-container:latest'
-    }
+            dockerfile { 
+                args '-u 0:0' //Forces Container tu run as User Root                    
+                reuseNode true
+            }
   }
     stages {
         stage('Build') {
