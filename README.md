@@ -3,7 +3,7 @@
 ## Build it
 
 ```
-git clone https://github.com/vincepower/aws-lambda-java-hello.git
+git clone https://github.com/richwolf817/aws-lambda-java-hello.git
 cd aws-lambda-java-hello
 mvn package
 ```
